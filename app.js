@@ -93,7 +93,7 @@ const updateState = (i) => {
 };
 
 const infoModal = (n) => {
-		alert("Uploaded by " + assignments[1].author + ", " + assignments[1].uploadYear + ".");
+		alert("Uploaded by " + assignments[n].author + ", " + assignments[n].uploadYear + ".");
 	// if (assignments[state.assignmentNumber].author !== "") {
 	// 	alert("Uploaded anonymously, " + assignments[n].uploadYear + ".");
 	// } else {
@@ -176,6 +176,19 @@ const loadAssignments = (assignmentTag) => {
 		} else {
 			imageFile = ``;
 		};
+		if (assignments[i].images.length > 0) {
+			state.assignment = assignments[i];
+			imageFile = (`class="modalLinkedThumbnail" onclick="updateState(` + i + `); openModal(` + i + `);"`);
+		} else {
+			imageFile = ``;
+		};
+
+		if (assignments[i].author != "") {
+			state.assignment = assignments[i];
+			infoButton = (`<span class="infoButton" onclick="updateState(` + i + `); infoModal(` + i + `);">?</span>`);
+		} else {
+			infoButton = ``;
+		};
 		if (assignments[i].googleLink != "") {
 			googleLinkATag = (
 								`<a class="assignmentLink" target="new" href="` + assignments[i].googleLink + `">google doc</a>`
@@ -191,9 +204,6 @@ const loadAssignments = (assignmentTag) => {
 								`<a class="assignmentLink" target="new" href="assignments/` + assignments[i].pdf + `">pdf</a>`
 			);
 		};
-		let infoButton = (
-			`<span class="infoButton" onclick="infoModal(` + i + `);">?</span>`
-		);
 		let addAssignment = false;
 		for(n = 0; n < assignments[i].subjects.length; n++) {
 			if (assignments[i].subjects[n] === state.page && assignments[i].hide === false) {

@@ -8,8 +8,8 @@ const assignments = [
 		"wordFile":		"",
 		"thumbnail": 	"catsthumb.jpg",
 		"images": 		["cats.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg", "cat6.jpg"],
-		"author": 		"Rick Aston", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
+		"author": 		"Bill Clinton", // leave empty quotes (like this: "") for anonymous post
+		"uploadYear":	1967,
 		"hide": 		false
 	},
 	{
@@ -21,7 +21,7 @@ const assignments = [
 		"wordFile":		"2dassignment2.docx",
 		"thumbnail": 	"",
 		"images": 		[],
-		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
+		"author": 		"", // leave empty quotes (like this: "") for anonymous post
 		"uploadYear":	2019,
 		"hide": 		false
 	},
