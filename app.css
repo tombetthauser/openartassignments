@@ -93,10 +93,10 @@ p {
     vertical-align: middle;
 }
 .container {
-    margin: 25px 5px;
-    width: 550px;
-    height: 300px;
-    line-height: 300px;
+    margin: -5px 35px;
+    width: 485px;
+    height: 360px;
+    line-height: 360px;
     text-align: center;
     /*border: solid 1px red;*/
 }
