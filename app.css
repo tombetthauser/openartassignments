@@ -185,5 +185,6 @@ p {
 #modalImage {
 	position: none;
 	vertical-align: middle;
-	border: inset 5px rgb(225,225,225);
+	border: inset 3px rgb(225,225,225);
+	cursor: default;
 }
