@@ -93,11 +93,12 @@ p {
     vertical-align: middle;
 }
 .container {
-    margin: 10px;
-    width: 535px;
-    height: 330px;
-    line-height: 330px;
+    margin: 25px 5px;
+    width: 550px;
+    height: 300px;
+    line-height: 300px;
     text-align: center;
+    /*border: solid 1px red;*/
 }
 .resize_fit_center {
     max-width:100%;
@@ -112,14 +113,15 @@ p {
 	top: 0;
 	right: 0;
 	cursor: pointer;
-	width: 20px;
-	height: 20px;
-	line-height: 16px;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
 	background-color: white;
 	margin: 10px;
-	/*padding: 2px;*/
+	padding: 3px;
 	text-align: center;
 	border-radius: 5px;
+	font-size: 17.5px;
 	border: outset 2px white;
 }
 #modalRight {
@@ -127,15 +129,15 @@ p {
 	bottom: 0;
 	right: 0;
 	cursor: pointer;
-	width: 20px;
-	height: 20px;
-	line-height: 16px;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
 	background-color: white;
 	margin: 10px;
-	padding: 0px;
+	padding: 3px;
 	text-align: center;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 12.5px;
 	border: outset 2px white;
 }
 #modalLeft {
@@ -143,28 +145,37 @@ p {
 	bottom: 0;
 	left: 0;
 	cursor: pointer;
-	width: 20px;
-	height: 20px;
-	line-height: 16px;
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
 	background-color: white;
 	margin: 10px;
-	padding: 0px;
+	padding: 3px;
 	text-align: center;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 12.5px;
 	border: outset 2px white;
 }
 #modalCloser:active {
 	border: inset 2px white;
-	padding: 2px;
+	padding: 5px;
 }
 #modalRight:active {
 	border: inset 2px white;
-	padding: 2px;
+	padding: 5px;
 }
 #modalLeft:active {
 	border: inset 2px white;
-	padding: 3px;
+	padding: 5px;
+}
+#modalCloser::selection {
+  background: rgba(255,255,255,0); /* WebKit/Blink Browsers */
+}
+#modalRight::selection {
+  background: rgba(255,255,255,0); /* WebKit/Blink Browsers */
+}
+#modalLeft::selection {
+  background: rgba(255,255,255,0); /* WebKit/Blink Browsers */
 }
 #mainModal {
 	display: none;

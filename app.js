@@ -92,9 +92,14 @@ const updateState = (i) => {
 	state.assignmentNumber = i;
 };
 
-const infoModal = () => {
-	alert("Uploaded by " + assignments[state.assignmentNumber].author + ", " + assignments[state.assignmentNumber].uploadYear + ".");
-}
+const infoModal = (n) => {
+		alert("Uploaded by " + assignments[1].author + ", " + assignments[1].uploadYear + ".");
+	// if (assignments[state.assignmentNumber].author !== "") {
+	// 	alert("Uploaded anonymously, " + assignments[n].uploadYear + ".");
+	// } else {
+	// 	alert("Uploaded by " + assignments[n].author + ", " + assignments[n].uploadYear + ".");
+	// };
+};
 
 const openModal = (i) => { 
 	newImage = assignments[i].images[0];
@@ -187,7 +192,7 @@ const loadAssignments = (assignmentTag) => {
 			);
 		};
 		let infoButton = (
-			`<span class="infoButton" onclick="infoModal();">?</span>`
+			`<span class="infoButton" onclick="infoModal(` + i + `);">?</span>`
 		);
 		let addAssignment = false;
 		for(n = 0; n < assignments[i].subjects.length; n++) {
