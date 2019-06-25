@@ -1,227 +1,192 @@
+/* css in specificity order - could use consolidating :^| */
+
+* {
+  box-sizing: border-box;
+}
 body {
-  margin:0;
-  padding:0;
-  font-family: serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 0.9em;
-  font-weight: 300;
-  color: #444;
+	margin: 50px 60px; 
+	max-width: 750px;
+	font-size: 15px;
 }
-
-a {
-  color: cornflowerblue;
+h1 {
+	font-weight: 100;
+	margin: 0 0 0 0;
+	font-size: 35px;
+	line-height: 30px;
 }
-
-.container-03 {
-  width: 85%; 
-  max-width: 450px;  
-  margin: 0 auto; 
+h2 {
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 15px;
+	margin: 0 0 30px 0;
 }
-
-li {
- 
+h3 {
+	font-weight: 100;
+	font-size: 17.5px;
+	line-height: 40px;
+	margin: 20px 0px 20px 20px;
 }
-
-.p-normal {
-  text-align: justify;
-  line-height: 17.5px;
+p {
+	font-weight: 100;
+	font-size: 15px;
+	margin: 10px 0 30px 0;
 }
-
-/*.title-02 {
-  font-size: 1.15em;
-  margin: 2em 0 1.5em;
-}*/
-
-.ul-links {
-  padding: 0;
-  line-height: 2em;
-  margin: 0 0 0 0;
-  list-style-type: none;
-  line-height: 20px;
+.homeLink {
+	color: blue;
+	font-size: 10px;
 }
-
-#title-01 {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 3em;
+.assignmentTitle {
+	font-weight: 100;
+	margin: 0 0 0 0;
+	font-size: 15px;
+	line-height: 15px;
 }
-
-#title-link {
-  font-size: 20px;
-  text-decoration: none;
-  color: #444;
+.assignmentLink {
+	font-size: 12.5px;
+	line-height: 12.5px;
+	margin-right: 5px;
 }
-
-#container-01 { 
-  width: 85%; 
-  max-width: 450px;  
-  margin: 40px auto; 
+.assignmentLink:visited {
+	color: blue;
 }
-
-#container-02 {
-  width: 85%; 
-  max-width: 450px;  
-  margin: 0 auto; 
-}
-
-#container-04{
-  font-size: 0.7em;
-  margin: 0 auto;
-  text-align: center;
-  color: #aaa;
-}
-  
-#container-04 a {
-  text-decoration: none;
-  color: #aaa;
-}
-
-#icon {
-  vertical-align: middle;
-  height: 2.8em;
-  width: auto;
-  opacity: .8;
-}
-
-#icon-link {
-  text-decoration: none;
-  margin-right: .5em;
-}
-
-#img-01 {
-  display: block;
-  margin: 0 auto;
-  width: 22.5em;
-  max-width: 80%;
-  margin-bottom: 1.5em;
-}
-
-#img-02 {
-  display: block;
-  margin: 2.5em auto 0;
-  width: 75%;
-  max-width: 18em;
-}
-
-#img-03 {
-  display: block;
-  margin: -1em auto 0 auto;
-  padding-right: 1em;
-  width: 100%;
-  max-width: 27em;
-}
-
-#img-04 {
-  display: block;
-  margin: 45px auto 0 auto;
-  width: 100%;
-  max-width: 375px;
-}
-
-.img-text-01 {
-  text-align: center;
-  margin-bottom: 3.5em;
-  font-size: 10px;
-  opacity: .8;
-}
-
-#img-text-02 {
-  text-align: center;
-  margin-top: 2em;
-  font-size: 10px;
-  opacity: .8;
-}
-
-#img-text-03 {
-  text-align: center;
-  margin: 0;
-  font-size: 10px;
-  opacity: .8;
-}
-
-/*#submit-div {
-  color: red;
-}*/
-
-#submit-btn {
-  color: #fff;
-  background-color: #77ccff;
-  border-radius: 4px;
-  border: none;
-  font-size: 1em;
-  font-weight: 300;
-  padding: .3em 1em;
-  margin: 2em auto 4em;
-  display: block; 
-}
-
-#submit-btn:hover {
-  opacity: .8;
-  cursor: pointer;
-}
-
-.link-github {
-  text-decoration: none;
-  font-size: .8em;
-  cursor: not-allowed;
-}
-
-.link-p {
-  text-decoration: none;
-}
-
-.link-p:hover {
-  text-decoration: underline;
-}
-
-.link-x {
-  opacity: .3;
-}
-
-.link-x:hover {
-  cursor: not-allowed;
-}
-
-.text-field {
-}
-
-#mce-EMAIL {
-  width: 14em;
-}
-
-#mc_embed_signup {
-  text-align: center;
-/*  width: 255px;
-  margin: 0 auto;*/
-  line-height: 2em;
-}
-
-/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 .thumbnail {
-  width: 75%;
-  display: block;
-/*  box-shadow: -2px 2px 5px rgba(0,0,0,.1);
-*/}
-
-.thumbnailTall {
-  width: 45%;
-  display: block;
-/*  box-shadow: -2px 2px 5px rgba(0,0,0,.1);
-*/}
-
-.divider {
-  height: 1px;
-  border-bottom: 1px solid rgba(0,0,0,.15);
-  width: 85%; 
-  max-width: 450px;  
-  margin: 50px auto; 
+	width: 100%;
 }
-
-.dividerSmall {
-  height: 1px;
-/*  border-bottom: 1px solid rgba(0,0,0,.15);*/
-  width: 85%; 
-  max-width: 450px;  
-  margin: 20px auto; 
+.row {
+	content: "";
+	display: table;
+	clear: both;
+	width: 100%;
+	margin-bottom: 5px;
+	white-space: nowrap;
+	margin: 0px 0px 5px 20px;
+}
+.column {
+	float: left;
+	height: 50px;
+}
+.columnOne {
+	width: 50px;
+}
+.columnTwo {
+	width: 500px;
+	max-width: 80%;
+	padding: 10px;
+}
+.link {
+	color: blue;
+	font-size: 15px;
+	cursor: pointer;
+}
+.modalLinkedThumbnail {
+	cursor: pointer;
+}
+.modalClass {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.modalImageClass {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+.container {
+    margin: 10px;
+    width: 740px;
+    height: 540px;
+    line-height: 540px;
+    text-align: center;
+}
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+#headDiv {
+	cursor: pointer;
+}
+#modalCloser {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+	background-color: white;
+	margin: 10px;
+	/*padding: 2px;*/
+	text-align: center;
+	border-radius: 5px;
+	border: outset 2px white;
+}
+#modalRight {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+	background-color: white;
+	margin: 10px;
+	padding: 1px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 10px;
+	border: outset 2px white;
+}
+#modalLeft {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+	background-color: white;
+	margin: 10px;
+	padding: 1px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 10px;
+	border: outset 2px white;
+}
+#modalCloser:active {
+	border: inset 2px white;
+	padding: 2px;
+}
+#modalRight:active {
+	border: inset 2px white;
+	padding: 3px;
+}
+#modalLeft:active {
+	border: inset 2px white;
+	padding: 3px;
+}
+#mainModal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: -400px;
+	z-index: 1;
+	padding: 20px;
+	background-color: lightgrey;
+	border: outset 3px rgb(230,230,230);
+	box-shadow: 3px 5px 8px rgba(0,0,0,.3),
+				3px 5px 2px rgba(0,0,0,0);
+}
+#modalImage {
+	position: none;
+	vertical-align: middle;
+	border: inset 5px rgb(225,225,225);
+}
+.fade {
+	opacity: .6;
 }
