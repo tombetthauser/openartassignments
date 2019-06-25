@@ -94,9 +94,9 @@ p {
 }
 .container {
     margin: 10px;
-    width: 740px;
-    height: 540px;
-    line-height: 540px;
+    width: 535px;
+    height: 330px;
+    line-height: 330px;
     text-align: center;
 }
 .resize_fit_center {
@@ -132,7 +132,7 @@ p {
 	line-height: 16px;
 	background-color: white;
 	margin: 10px;
-	padding: 1px;
+	padding: 0px;
 	text-align: center;
 	border-radius: 5px;
 	font-size: 10px;
@@ -148,7 +148,7 @@ p {
 	line-height: 16px;
 	background-color: white;
 	margin: 10px;
-	padding: 1px;
+	padding: 0px;
 	text-align: center;
 	border-radius: 5px;
 	font-size: 10px;
@@ -160,7 +160,7 @@ p {
 }
 #modalRight:active {
 	border: inset 2px white;
-	padding: 3px;
+	padding: 2px;
 }
 #modalLeft:active {
 	border: inset 2px white;
@@ -171,10 +171,10 @@ p {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 800px;
-	height: 600px;
-	margin-top: -300px;
-	margin-left: -400px;
+	width: 600px;
+	height: 400px;
+	margin-left: -300px;
+	margin-top: -200px;
 	z-index: 1;
 	padding: 20px;
 	background-color: lightgrey;
@@ -186,7 +186,4 @@ p {
 	position: none;
 	vertical-align: middle;
 	border: inset 5px rgb(225,225,225);
-}
-.fade {
-	opacity: .6;
 }
