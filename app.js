@@ -38,7 +38,7 @@ const homeText = (
 	+ `artists & designed to help art adjuncts share knowledge and build community. ` 
 	+ `Want to share your assignments? Upload them ` 
 	+ 	`<span id="uploadLink">` 
-	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSdFWCQAuQOG7rvFbYTdhabgixLXof1wu4XQSF6oRVYZ232r1A/viewform?usp=sf_link">` 
+	+ 		`<a target="new" href="https://forms.gle/viCSLc7Z3FfYR7Mk8">` 
 	+ 			`here`
 	+ 		`</a>`
 	+ 	`</span>.`
@@ -64,6 +64,16 @@ const paintingBody = `<h3>Painting Assignments:</h3>`;
 const sculptureBody = `<h3>Sculpture Assignments:</h3>`;
 const introToArtBody = `<h3>Introduction to Art Assignments:</h3>`;
 const artHistoryBody = `<h3>Art History Assignments:</h3>`;
+
+const addAssignmentFooter = (
+	  `<p class="addAssignmentFooter">Want to add an assignment? Upload it ` 
+	+ 	`<span id="uploadLink">` 
+	+ 		`<a target="new" href="https://forms.gle/viCSLc7Z3FfYR7Mk8">` 
+	+ 			`here`
+	+ 		`</a>`
+	+ 	`</span>.`
+	+ `</p>`
+);
 
 
 // –––––––––––––––––––––––––     general use functions - need refactoring :|     –––––––––––––––––––––––––
@@ -201,6 +211,7 @@ const loadAssignments = (assignmentTag) => {
 	if (!assignmentCounter) {
 		bodyDiv.innerHTML += `<p class="row">Sorry, no assignments yet.</p>`;
 	};
+	bodyDiv.innerHTML += addAssignmentFooter;
 };
 
 

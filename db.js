@@ -2,12 +2,14 @@ const assignments = [
 	{
 		"title": 		"Medieval Cat Paintings (for debugging)",
 		"subjects": 	["painting"],
-		"googleLink": 	"",
+		"googleLink": 	"http://www.infinitelooper.com/?v=DLzxrzFCyOs",
 		"file": 		"",
 		"pdf":	 		"",
 		"wordFile":		"",
 		"thumbnail": 	"catsthumb.jpg",
 		"images": 		["cats.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg", "cat6.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -19,6 +21,8 @@ const assignments = [
 		"wordFile":		"2dassignment2.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -30,6 +34,8 @@ const assignments = [
 		"wordFile":		"personalprojectproposal.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -41,6 +47,8 @@ const assignments = [
 		"wordFile":		"sampleassignmentsintroductorypaintingdrawingcourse.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -52,6 +60,8 @@ const assignments = [
 		"wordFile":		"timelineassignmenthandout.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -63,6 +73,8 @@ const assignments = [
 		"wordFile":		"extracreditpaperassignment.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -74,6 +86,8 @@ const assignments = [
 		"wordFile":		"2ddesignassignment3.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -85,6 +99,8 @@ const assignments = [
 		"wordFile":		"2ddesignassignment4.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -96,6 +112,8 @@ const assignments = [
 		"wordFile":		"paintinglightdiagram.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -107,6 +125,8 @@ const assignments = [
 		"wordFile":		"",
 		"thumbnail": 	"brushThumb.jpg",
 		"images": 		["brushassignmentimage.jpg", "whatispainttwo.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -118,6 +138,8 @@ const assignments = [
 		"wordFile":		"inclassactivitycolorwheelgradients.docx",
 		"thumbnail": 	"Screen Shot 2019-06-24 at 12.16.25 PM.jpg",
 		"images": 		["Screen Shot 2019-06-24 at 12.15.15 PM.jpg", "Screen Shot 2019-06-24 at 12.15.07 PM.jpg", "Screen Shot 2019-06-24 at 12.14.57 PM.jpg", "Screen Shot 2019-06-24 at 12.14.43 PM.jpg", "Screen Shot 2019-06-24 at 12.14.35 PM.jpg", "Screen Shot 2019-06-24 at 12.14.08 PM.jpg", "Screen Shot 2019-06-24 at 12.13.53 PM.jpg", "Screen Shot 2019-06-24 at 12.13.34 PM.jpg", "Screen Shot 2019-06-24 at 12.13.20 PM.jpg", "Screen Shot 2019-06-24 at 12.13.02 PM.jpg", "Screen Shot 2019-06-24 at 12.12.42 PM.jpg", "Screen Shot 2019-06-24 at 12.12.30 PM.jpg", "Screen Shot 2019-06-24 at 12.12.21 PM.jpg", "Screen Shot 2019-06-24 at 12.12.02 PM.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -129,6 +151,8 @@ const assignments = [
 		"wordFile":		"inclassactivitycomplementstilllife.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -140,6 +164,8 @@ const assignments = [
 		"wordFile":		"howtopaintgeorgewashingtonhandout.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -151,6 +177,8 @@ const assignments = [
 		"wordFile":		"",
 		"thumbnail": 	"inkblotthumb.jpg",
 		"images": 		["rorschachimage.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -162,6 +190,8 @@ const assignments = [
 		"wordFile":		"2ddesignpaintinganalysismidterm.docx",
 		"thumbnail": 	"twodpaintinganalysismidtermthumb.jpg",
 		"images": 		["twodpaintinganalysismidtermone.jpg", "twodpaintinganalysismidtermtwo.jpg", "twodpaintinganalysismidtermthree.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -173,6 +203,8 @@ const assignments = [
 		"wordFile":		"2ddesignsampleanalysis.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -184,6 +216,8 @@ const assignments = [
 		"wordFile":		"2ddesignglasspainting.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -195,6 +229,8 @@ const assignments = [
 		"wordFile":		"2ddesignkindsofpaintings.docx",
 		"thumbnail": 	"typesofpaintingthumb.jpg",
 		"images": 		["typesofpaintingimage.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -206,6 +242,8 @@ const assignments = [
 		"wordFile":		"2ddesignexistentialpainting.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -217,6 +255,8 @@ const assignments = [
 		"wordFile":		"2ddesignearpainting.docx",
 		"thumbnail": 	"earthumbnail.jpg",
 		"images": 		["earpainting.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -228,6 +268,8 @@ const assignments = [
 		"wordFile":		"2ddesigndepressingpainting.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -239,6 +281,8 @@ const assignments = [
 		"wordFile":		"2ddesignstrangepainting.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -250,6 +294,8 @@ const assignments = [
 		"wordFile":		"2ddesigngeometricpainting.docx",
 		"thumbnail": 	"geometricpaintingthumb.jpg",
 		"images": 		["geometricpainting.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -261,6 +307,8 @@ const assignments = [
 		"wordFile":		"2ddesignlinearperspective.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -272,6 +320,8 @@ const assignments = [
 		"wordFile":		"2ddesignlinearperspectivesimplified.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -283,6 +333,8 @@ const assignments = [
 		"wordFile":		"2ddesignartdesignpacketfinal.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -294,6 +346,8 @@ const assignments = [
 		"wordFile":		"2ddesignhowtodrawacube.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -305,6 +359,8 @@ const assignments = [
 		"wordFile":		"2ddesignfinalwrittenassignment.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -316,6 +372,8 @@ const assignments = [
 		"wordFile":		"buyingsupplieshowtobeanartist.docx",
 		"thumbnail": 	"buyingsuppliesthumb.jpg",
 		"images": 		["buyingsuppliespageone.jpg", "buyingsuppliespagetwo.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -327,6 +385,8 @@ const assignments = [
 		"wordFile":		"buyingpainthowtobeanartist.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -338,6 +398,8 @@ const assignments = [
 		"wordFile":		"reachingouttootherartistshowtobeanartist.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -349,6 +411,8 @@ const assignments = [
 		"wordFile":		"introductionhowtobeanartist.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -360,6 +424,8 @@ const assignments = [
 		"wordFile":		"handoutforprehistoricflutesong.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -371,6 +437,8 @@ const assignments = [
 		"wordFile":		"homeworkassignmentartnotartart.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -382,6 +450,8 @@ const assignments = [
 		"wordFile":		"homeworkassignmentsilhouettes.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -393,6 +463,8 @@ const assignments = [
 		"wordFile":		"appreciationdelanomidterm.docx",
 		"thumbnail": 	"Screen Shot 2019-06-24 at 1.24.59 AM.jpg",
 		"images": 		["Screen Shot 2019-06-24 at 1.25.06 AM.jpg", "Screen Shot 2019-06-24 at 1.25.16 AM.jpg", "Screen Shot 2019-06-24 at 1.25.25 AM.jpg"],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -404,6 +476,8 @@ const assignments = [
 		"wordFile":		"agriculturetimeline.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -415,6 +489,8 @@ const assignments = [
 		"wordFile":		"critiquerubricdrawing.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -426,6 +502,8 @@ const assignments = [
 		"wordFile":		"comparativeanalysisarthist.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -437,6 +515,8 @@ const assignments = [
 		"wordFile":		"indangerofnotpassinghandout.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -448,6 +528,8 @@ const assignments = [
 		"wordFile":		"portfoliorequirementsdrawingi.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 	{
@@ -459,6 +541,8 @@ const assignments = [
 		"wordFile":		"finalwrittenexamarthist.docx",
 		"thumbnail": 	"",
 		"images": 		[],
+		"author": 		"Tom Betthauser",
+		"uploadYear":	2019,
 		"hide": 		false
 	},
 ]

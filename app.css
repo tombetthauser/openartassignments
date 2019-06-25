@@ -188,3 +188,9 @@ p {
 	border: inset 3px rgb(225,225,225);
 	cursor: default;
 }
+.addAssignmentFooter {
+	margin: 40px 20px 100px; 
+}
+a:visited {
+	color: blue;
+}
