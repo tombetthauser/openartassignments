@@ -30,6 +30,21 @@ const bodyDiv = document.getElementById("bodyDiv");
 // –––––––––––––––––––––––––     loadable html content / divs etc     –––––––––––––––––––––––––
 
 
+const headTitle = `<h1>OAA</h1>`;
+const headSubTitle = `<h2>Open Art Assignments <span class="homeLink">(home)</span></h2>`;
+
+const homeText = (
+	  `<p>Browse college art assignments. Download, revise, share, use. Free for ` 
+	+ `artists & designed to help art adjuncts share knowledge and build community. ` 
+	+ `Want to share your assignments? Upload them ` 
+	+ 	`<span id="uploadLink">` 
+	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSdFWCQAuQOG7rvFbYTdhabgixLXof1wu4XQSF6oRVYZ232r1A/viewform?usp=sf_link">` 
+	+ 			`here`
+	+ 		`</a>`
+	+ 	`</span>.`
+	+ `</p>`
+);
+
 const homeLinks = (
 	  `<ul>` 
 	+ `<a class="link" id="drawing"><li>Drawing</li></a>` 
@@ -42,9 +57,6 @@ const homeLinks = (
 	+ `</ul>`
 );
 
-const homeText = `<p>Browse college art assignments. Download, revise, share, use. Free for artists & designed to help art adjuncts share knowledge and build community. Want to share your assignments? Upload them <span id="uploadLink">here</span>.</p>`;
-const headTitle = `<h1>OAA</h1>`;
-const headSubTitle = `<h2>Open Art Assignments <span class="homeLink">(home)</span></h2>`;
 const drawingBody = `<h3>Drawing Assignments:</h3>`;
 const twoDDesignBody = `<h3>2D Design Assignments:</h3>`;
 const threeDDesignBody = `<h3>3D Design Assignments:</h3>`;
