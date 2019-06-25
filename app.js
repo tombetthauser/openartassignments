@@ -38,7 +38,7 @@ const homeText = (
 	+ `artists & designed to help art adjuncts share knowledge and build community. ` 
 	+ `Want to share your assignments? Upload them ` 
 	+ 	`<span id="uploadLink">` 
-	+ 		`<a target="new" href="https://forms.gle/viCSLc7Z3FfYR7Mk8">` 
+	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
 	+ 			`here`
 	+ 		`</a>`
 	+ 	`</span>.`
@@ -68,7 +68,7 @@ const artHistoryBody = `<h3>Art History Assignments:</h3>`;
 const addAssignmentFooter = (
 	  `<p class="addAssignmentFooter">Want to add an assignment? Upload it ` 
 	+ 	`<span id="uploadLink">` 
-	+ 		`<a target="new" href="https://forms.gle/viCSLc7Z3FfYR7Mk8">` 
+	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
 	+ 			`here`
 	+ 		`</a>`
 	+ 	`</span>.`
