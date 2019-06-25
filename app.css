@@ -194,3 +194,10 @@ p {
 a:visited {
 	color: blue;
 }
+.infoButton {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: bold;
+}

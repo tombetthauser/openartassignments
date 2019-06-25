@@ -92,6 +92,10 @@ const updateState = (i) => {
 	state.assignmentNumber = i;
 };
 
+const infoModal = () => {
+	alert("Uploaded by " + assignments[state.assignmentNumber].author + ", " + assignments[state.assignmentNumber].uploadYear + ".");
+}
+
 const openModal = (i) => { 
 	newImage = assignments[i].images[0];
 	document.getElementById("mainModal").style.display = "block";
@@ -182,6 +186,9 @@ const loadAssignments = (assignmentTag) => {
 								`<a class="assignmentLink" target="new" href="assignments/` + assignments[i].pdf + `">pdf</a>`
 			);
 		};
+		let infoButton = (
+			`<span class="infoButton" onclick="infoModal();">?</span>`
+		);
 		let addAssignment = false;
 		for(n = 0; n < assignments[i].subjects.length; n++) {
 			if (assignments[i].subjects[n] === state.page && assignments[i].hide === false) {
@@ -190,6 +197,7 @@ const loadAssignments = (assignmentTag) => {
 		};
 		if (addAssignment === true) {
 			let thumbnailPic;
+			updateState(i);
 			bodyDiv.innerHTML += (
 					`<div class="row">` 
 				+	  	`<div class="column columnOne"">`
@@ -202,6 +210,7 @@ const loadAssignments = (assignmentTag) => {
 				+ 				googleLinkATag
 				+ 				wordFileATag
 				+ 				pdfATag
+				+ 				infoButton
 				+ 		`</div>`
 				+ 	`</div>`
 			);
