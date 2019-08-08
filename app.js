@@ -31,30 +31,31 @@ const bodyDiv = document.getElementById("bodyDiv");
 
 
 const headTitle = `<h1>OAA</h1>`;
-const headSubTitle = `<h2>Open Art Assignments <span class="homeLink">(home)</span></h2>`;
+const headSubTitle = `<h2>Open Art Assignment`;
 
 const homeText = (
-	  `<p>Browse college art assignments. Download, revise, share, use. Free for ` 
+	  `<div class="borderWrapper">` 
+	+ `<p>Browse college art assignments. Download, revise, share, use. Free for ` 
 	+ `artists & designed to help art adjuncts share knowledge and build community. ` 
-	+ `Want to share your assignments? Upload them ` 
-	+ 	`<span id="uploadLink">` 
-	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
-	+ 			`here`
-	+ 		`</a>`
-	+ 	`</span>.`
+	+ `Want to share your own assignments? Click the link below.` 
 	+ `</p>`
+	+ `<a class="headerLink" href="">` 
+	+ 	`home`
+	+ `</a>`
+	+ `<a class="headerLink" target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
+	+ 	`upload assignmet`
+	+ `</a>`
+	+ `</div>`
 );
 
 const homeLinks = (
-	  `<ul>` 
-	+ `<a class="link" id="drawing"><li>Drawing</li></a>` 
-	+ `<a class="link" id="twoDDesign"><li>2D Design</li></a>` 
-	+ `<a class="link" id="threeDDesign"><li>3D Design</li></a>` 
-	+ `<a class="link" id="painting"><li>Painting</li></a>` 
-	+ `<a class="link" id="sculpture"><li>Sculpture</li></a>` 
-	+ `<a class="link" id="introToArt"><li>Intro to Art</li></a>` 
-	+ `<a class="link" id="artHistory"><li>Art History</li></a>` 
-	+ `</ul>`
+	  `<div class="link rootLink"><a id="drawing">Drawing</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="twoDDesign">2D Design</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="threeDDesign">3D Design</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="painting">Painting</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="sculpture">Sculpture</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="introToArt">Intro to Art</a></div>` 
+	+ `<div class="link rootLink"><a class="" id="artHistory">Art History</a></div>` 
 );
 
 const drawingBody = `<h3>Drawing Assignments:</h3>`;
@@ -120,10 +121,10 @@ const openModal = (i) => {
 		);
 	};
 	document.getElementById("modalImage").src = ("images/" + newImage);
-	headDiv.style.opacity = (".4");
-	bodyDiv.style.opacity = (".4");
-	headDiv.style.filter = ("blur(1px)");
-	bodyDiv.style.filter = ("blur(1px)");
+	headDiv.style.opacity = (".15");
+	bodyDiv.style.opacity = (".15");
+	// headDiv.style.filter = ("blur(1px)");
+	// bodyDiv.style.filter = ("blur(1px)");
 };
 
 const loadHomeListeners = () => {
@@ -183,12 +184,15 @@ const loadAssignments = (assignmentTag) => {
 			imageFile = ``;
 		};
 
-		if (assignments[i].author != "") {
-			state.assignment = assignments[i];
-			infoButton = (`<span class="infoButton" onclick="updateState(` + i + `); infoModal(` + i + `);">?</span>`);
-		} else {
-			infoButton = ``;
-		};
+		// if (assignments[i].author != "") {
+		// 	state.assignment = assignments[i];
+		// 	infoButton = (`<span class="infoButton" onclick="updateState(` + i + `); infoModal(` + i + `);">?</span>`);
+		// } else {
+		// 	infoButton = ``;
+		// };
+		infoButton = ``;
+
+
 		if (assignments[i].googleLink != "") {
 			googleLinkATag = (
 								`<a class="assignmentLink" target="new" href="` + assignments[i].googleLink + `">google doc</a>`
@@ -220,12 +224,14 @@ const loadAssignments = (assignmentTag) => {
 				+	 			`<img class="thumbnail" src="` + thumbnailFile + `">`
 				+	 		`</a>`
 				+ 		`</div>`
-				+ 		`<div class="column columnTwo">`
+				+ 		`<div class="column columnTwo assignmentCardDiv">`
 				+ 			`<h3 class="assignmentTitle">` + assignments[i].title + `</h3>`
+				+ 			`<div class="assignmentCardLinkGroup">`
 				+ 				googleLinkATag
 				+ 				wordFileATag
 				+ 				pdfATag
 				+ 				infoButton
+				+ 			`</div>`
 				+ 		`</div>`
 				+ 	`</div>`
 			);

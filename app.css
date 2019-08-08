@@ -2,37 +2,61 @@
 
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+a {
+	color: cornflowerblue;
+}
+
 body {
 	margin: 50px 60px; 
-	max-width: 750px;
+	max-width: 500px;
 	font-size: 15px;
 }
 h1 {
-	font-weight: 100;
-	margin: 0 0 0 0;
-	font-size: 35px;
-	line-height: 30px;
+	font-weight: 50;
+	margin: 0 0 0 -4px;
+	font-size: 45px;
+	line-height: 55px;
+	letter-spacing: 3px;
 }
 h2 {
 	font-weight: 100;
-	font-size: 15px;
-	line-height: 15px;
-	margin: 0 0 30px 0;
+	font-size: 17.5px;
+	line-height: 30px;
+	margin: 0 0 0 0;
+	letter-spacing: 2px;
 }
 h3 {
 	font-weight: 100;
 	font-size: 17.5px;
 	line-height: 40px;
-	margin: 20px 0px 20px 20px;
+	margin: 20px 0px 20px 0px;
+	letter-spacing: .5px;
 }
 p {
 	font-weight: 100;
-	font-size: 15px;
-	margin: 10px 0 30px 0;
+	font-size: 12.5px;
+	margin: 10px 0 0 0;
+	line-height: 16px;
+	letter-spacing: .5px;
 }
+
+.headerLink {
+	padding-right: 10px;
+	line-height: 60px;
+	letter-spacing: .5px;
+	font-size: 12.5px;
+}
+
+.borderWrapper {
+	border-bottom: 1px solid rgba(0, 0, 0, .25);
+	margin-bottom: 40px;
+}
+
 .homeLink {
-	color: blue;
+	color: cornflowerblue;
 	font-size: 10px;
 }
 .assignmentTitle {
@@ -47,19 +71,49 @@ p {
 	margin-right: 5px;
 }
 .assignmentLink:visited {
-	color: blue;
+	color: cornflowerblue;
 }
 .thumbnail {
-	width: 100%;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	/*border: 3px solid white;*/
+	box-shadow: 0 0 4px rgba(0,0,0,.125);
 }
 .row {
+	background-color: #e5e5e5;
+	padding: 12.5px;
+	border-radius: 5px;
 	content: "";
 	display: table;
 	clear: both;
-	width: 100%;
 	margin-bottom: 5px;
 	white-space: nowrap;
-	margin: 0px 0px 5px 20px;
+	margin: 0px 0px 15px -4px;
+}
+.assignmentCardDiv {
+	margin-left: 15px;
+	margin-top: -17.5px;
+}
+.assignmentCardDiv h3 {
+	line-height: 40px;
+	margin-left: 4px;
+}
+.infoButton, .assignmentCardLinkGroup a {
+	background-color: white;
+	padding: 4px 9px;
+	border-radius: 5px;
+	text-decoration: none;
+	letter-spacing: .5px;
+	font-weight: 100;
+	margin-right: 5px;
+	font-size: 10px;
+}
+.infoButton {
+	color: cornflowerblue;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 10px;
 }
 .column {
 	float: left;
@@ -69,14 +123,31 @@ p {
 	width: 50px;
 }
 .columnTwo {
-	width: 500px;
+	width: 400px;
 	max-width: 80%;
-	padding: 10px;
+	padding-top: 7px;
 }
 .link {
-	color: blue;
+	background-color: #e5e5e5;
 	font-size: 15px;
 	cursor: pointer;
+	font-size: 15px;
+	cursor: pointer;
+	width: 175px;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 50;
+	line-height: 35px;
+	border-radius: 5px;
+}
+.link a {
+	color: black;
+}
+.rootLink {
+	/*color: red;*/
+	/*margin: 10px;
+	border-radius: 10px;*/
+
 }
 .modalLinkedThumbnail {
 	cursor: pointer;
@@ -109,64 +180,70 @@ p {
 	cursor: pointer;
 }
 #modalCloser {
+	color: cornflowerblue;
 	position: absolute;
 	top: 0;
 	right: 0;
 	cursor: pointer;
-	width: 30px;
-	height: 30px;
+	width: 27.5px;
+	height: 27.5px;
 	line-height: 20px;
 	background-color: white;
-	margin: 10px;
-	padding: 3px;
+	margin: 15px;
+	padding-top: 4px;
 	text-align: center;
-	border-radius: 5px;
-	font-size: 17.5px;
-	border: outset 2px white;
+	border-radius: 50%;
+	font-size: 15px;
+	font-weight: 100;
+	/*border: outset 2px white;*/
 }
 #modalRight {
+	color: cornflowerblue;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	cursor: pointer;
-	width: 30px;
-	height: 30px;
+	width: 27.5px;
+	height: 27.5px;
 	line-height: 20px;
 	background-color: white;
-	margin: 10px;
-	padding: 3px;
+	margin: 15px;
+	padding-top: 4px;
 	text-align: center;
-	border-radius: 5px;
-	font-size: 12.5px;
-	border: outset 2px white;
+	border-radius: 50%;
+	font-size: 10px;
+	font-weight: 100;
+	/*border: outset 2px white;*/
 }
 #modalLeft {
+	color: cornflowerblue;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	cursor: pointer;
-	width: 30px;
-	height: 30px;
+	width: 27.5px;
+	height: 27.5px;
 	line-height: 20px;
 	background-color: white;
-	margin: 10px;
-	padding: 3px;
+	margin: 15px;
+	padding-top: 4px;
 	text-align: center;
-	border-radius: 5px;
-	font-size: 12.5px;
-	border: outset 2px white;
+	border-radius: 50%;
+	font-size: 10px;
+	font-weight: 100;
+	/*border: outset 2px white;*/
 }
 #modalCloser:active {
-	border: inset 2px white;
-	padding: 5px;
+	/*border: inset 2px white;*/
+	/*padding: 5px;*/
 }
 #modalRight:active {
-	border: inset 2px white;
-	padding: 5px;
+	/*border: inset 2px white;*/
+	/*padding: 5px;*/
 }
 #modalLeft:active {
-	border: inset 2px white;
-	padding: 5px;
+	/*border: inset 2px white;*/
+	/*padding: 5px;*/
 }
 #modalCloser::selection {
   background: rgba(255,255,255,0); /* WebKit/Blink Browsers */
@@ -188,27 +265,21 @@ p {
 	margin-top: -200px;
 	z-index: 1;
 	padding: 20px;
-	background-color: lightgrey;
-	border: outset 3px rgb(230,230,230);
+	background-color: #e5e5e5;
+	border-radius: 10px;
+	/*border: outset 3px rgb(230,230,230);*/
 	box-shadow: 3px 5px 8px rgba(0,0,0,.3),
 				3px 5px 2px rgba(0,0,0,0);
 }
 #modalImage {
 	position: none;
 	vertical-align: middle;
-	border: inset 3px rgb(225,225,225);
+/*	border: inset 3px rgb(225,225,225);*/
 	cursor: default;
 }
 .addAssignmentFooter {
 	margin: 40px 20px 100px; 
 }
 a:visited {
-	color: blue;
-}
-.infoButton {
-	color: blue;
-	text-decoration: none;
-	cursor: pointer;
-	font-size: 10px;
-	font-weight: bold;
+	color: cornflowerblue;
 }

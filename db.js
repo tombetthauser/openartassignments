@@ -39,19 +39,6 @@ const assignments = [
 		"hide": 		false
 	},
 	{
-		"title": 		"Sample Assignments for Introductory Painting/Drawing Course",
-		"subjects": 	["painting", "drawing"],
-		"googleLink": 	"https://docs.google.com/document/d/181sb2uGyCNb0RSh__Sd-NAIFnycy8uAmGRUfirgvQFw/edit?usp=sharing",
-		"file": 		"sampleassignmentsintroductorypaintingdrawingcourse",
-		"pdf":	 		"sampleassignmentsintroductorypaintingdrawingcourse.pdf",
-		"wordFile":		"sampleassignmentsintroductorypaintingdrawingcourse.docx",
-		"thumbnail": 	"",
-		"images": 		[],
-		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
-		"hide": 		false
-	},
-	{
 		"title": 		"Timeline Assignment: Handout",
 		"subjects": 	["artHistory"],
 		"googleLink": 	"https://docs.google.com/document/d/1s5SAb6xzhsY8xXLq91yqlgzWfQ3Ypo8RipwE4aDwHVQ/edit?usp=sharing",
