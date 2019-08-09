@@ -15,6 +15,7 @@ const init = () => {
 		+ 	`<div id="bodyDiv"></div>`
 		+ 	`<div class="modalClass" id="mainModal"></div>`
 	);
+	document.getElementById("browserTabTitle").innerHTML = generalInfo.browser_tab_title;
 };
 
 init();
@@ -30,33 +31,44 @@ const bodyDiv = document.getElementById("bodyDiv");
 // –––––––––––––––––––––––––     loadable html content / divs etc     –––––––––––––––––––––––––
 
 
-const headTitle = `<h1>OAA</h1>`;
-const headSubTitle = `<h2>Open Art Assignment`;
+const headTitle = `<h1>` + generalInfo.header_main_title + `</h1>`;
+const headSubTitle = `<h2>` + generalInfo.header_sub_title + `</h2>`;
 
-const homeText = (
-	  `<div class="borderWrapper">` 
-	+ `<p>Browse college art assignments. Download, revise, share, use. Free for ` 
-	+ `artists & designed to help art adjuncts share knowledge and build community. ` 
-	+ `Want to share your own assignments? Click the link below.` 
-	+ `</p>`
-	+ `<a class="headerLink" href="">` 
+let homeText = `<div class="borderWrapper">`
+for (let i = 0; i < generalInfo.header_text.length; i++) {
+	homeText += `<p>` + generalInfo.header_text[i] + `</p>`
+};
+homeText += (
+	  `<a class="headerLink" href="">` 
 	+ 	`home`
 	+ `</a>`
-	+ `<a class="headerLink" target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
-	+ 	`upload assignmet`
+	+ `<a class="headerLink" target="new" href="` + generalInfo.add_assignment_link + `">` 
+	+ 	generalInfo.add_assignment_text
 	+ `</a>`
 	+ `</div>`
 );
 
-const homeLinks = (
-	  `<div class="link rootLink"><a id="drawing">Drawing</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="twoDDesign">2D Design</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="threeDDesign">3D Design</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="painting">Painting</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="sculpture">Sculpture</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="introToArt">Intro to Art</a></div>` 
-	+ `<div class="link rootLink"><a class="" id="artHistory">Art History</a></div>` 
-);
+
+
+let homeLinks = ""// = (
+	//   `<div class="link rootLink"><a id="drawing">Drawing</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="twoDDesign">2D Design</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="threeDDesign">3D Design</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="painting">Painting</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="sculpture">Sculpture</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="introToArt">Intro to Art</a></div>` 
+	// + `<div class="link rootLink"><a class="" id="artHistory">Art History</a></div>` 
+// );
+
+for (let i = 0; i < generalInfo.assignment_links.length; i++) {
+	if (generalInfo.assignment_links[i].show_link) {
+		homeLinks += (
+					`<div class="link rootLink"><a id="` + generalInfo.assignment_links[i].search_id + `">` 
+					+ generalInfo.assignment_links[i].link_text
+					+ `</a></div>`
+		);
+	};
+};
 
 const drawingBody = `<h3>Drawing Assignments:</h3>`;
 const twoDDesignBody = `<h3>2D Design Assignments:</h3>`;
@@ -128,14 +140,13 @@ const openModal = (i) => {
 };
 
 const loadHomeListeners = () => {
-	document.getElementById("drawing").addEventListener( "click", loadDrawing );
-	document.getElementById("twoDDesign").addEventListener( "click", loadTwoDDesign );
-	document.getElementById("threeDDesign").addEventListener( "click", loadThreeDDesign );
-	document.getElementById("painting").addEventListener( "click", loadPainting );
-	document.getElementById("sculpture").addEventListener( "click", loadSculpture );
-	document.getElementById("sculpture").addEventListener( "click", loadSculpture );
-	document.getElementById("introToArt").addEventListener( "click", loadIntroToArt );
-	document.getElementById("artHistory").addEventListener( "click", loadArtHistory );
+	if (generalInfo.assignment_links[0].show_link) {document.getElementById("drawing").addEventListener( "click", loadDrawing );};
+	if (generalInfo.assignment_links[1].show_link) {document.getElementById("twoDDesign").addEventListener( "click", loadTwoDDesign );};
+	if (generalInfo.assignment_links[2].show_link) {document.getElementById("threeDDesign").addEventListener( "click", loadThreeDDesign );};
+	if (generalInfo.assignment_links[3].show_link) {document.getElementById("painting").addEventListener( "click", loadPainting );};
+	if (generalInfo.assignment_links[4].show_link) {document.getElementById("sculpture").addEventListener( "click", loadSculpture );};
+	if (generalInfo.assignment_links[5].show_link) {document.getElementById("introToArt").addEventListener( "click", loadIntroToArt );};
+	if (generalInfo.assignment_links[6].show_link) {document.getElementById("artHistory").addEventListener( "click", loadArtHistory );};
 };
 
 const imageChange = (leftRight) => {
@@ -269,5 +280,10 @@ const refresh = () => {
 // –––––––––––––––––––––––––     loading initial home content / links     –––––––––––––––––––––––––
 
 
-refresh();
+if (construction_mode) {
+	document.getElementById("body").innerHTML = (
+		  `<h2>` + construction_mode_text.construction_title + `</h2>`
+		+ `<p>` + construction_mode_text.construction_text + `</p>`
+	)
+} else { refresh() };
 headDiv.addEventListener("click", loadHome);

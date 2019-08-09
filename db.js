@@ -1,3 +1,77 @@
+// ––––––––––––––– SECTION 01 ––––––––––––––––––––
+
+// first we have the construction mode that turns off the website
+// use this if something breaks and you can't figure it out
+// changing this to true will turn the website off temporarily!
+
+
+const construction_mode = false
+const construction_mode_text = {
+	"construction_title": 	"Under Construction",
+	"construction_text": 	"OAA is temporarily being worked on. The page will be back up shortly.",
+}
+
+
+
+
+
+// ––––––––––––––– SECTION 02 ––––––––––––––––––––
+
+// next we have al the general website info
+// here you can change the title of the site, the text, the links etc etc
+
+
+const generalInfo = {
+	"browser_tab_title": 	"Open Art Assignment",
+	"header_main_title": 	"OAA",
+	"header_sub_title": 	"Open Art Assignment",
+	"header_text": [
+
+		// paragraph #1
+		// duplicate the line below to add more paragraphs if desired, include comma at the end of the line
+
+		"Browse college art assignments. Download, revise, share, use. Free for artists & designed to help art adjuncts share knowledge and build community. Want to share your own assignments? Click the link below.",
+	],
+	"add_assignment_text": "upload assignment",
+	"add_assignment_link": "https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform",
+	"assignment_links": [
+
+		// these will appear in order
+		// rearrange the order as much as you Want
+		// for now don't add or subtract any, well add that later
+		// change the wording to the right of "link_text" as much as you want
+		// you can also change the "show_link" from true to false if you want to hide any of these
+		// for now dont mess with the "search_id" part, we'll add that later
+
+		{ "link_text": "Drawing", 		"show_link": true,		"search_id": "drawing"			},
+		{ "link_text": "2D Design", 	"show_link": true,		"search_id": "twoDDesign"		},
+		{ "link_text": "3D Design",		"show_link": false,		"search_id": "threeDDesign"		},
+		{ "link_text": "Painting", 		"show_link": true,		"search_id": "painting"			},
+		{ "link_text": "Sculpture", 	"show_link": false,		"search_id": "sculpture"		},
+		{ "link_text": "Intro to Art",	"show_link": true,		"search_id": "introToArt"		},
+		{ "link_text": "Art History",	"show_link": true,		"search_id": "artHistory"		},
+	],
+
+	// here you can edit or turn off the footer text that links to the upload assignment form
+	// change "show_footer_text" to false to turn it off completely
+
+	"footer_text": "Want to add an assignment? Upload it", // ..."here." this part with the link is automatic for now
+	"show_footer_text": true,
+}
+
+
+
+
+
+// ––––––––––––––– SECTION 03 ––––––––––––––––––––
+
+// below are all the assignments
+// to make a new one copy and paste any of these and then change all the pertinant info
+// remember to add all the appropriate files to the website folder
+// make sure to include the "{...}" brackets and all the appropriate commas and quatation marks 
+// also, the order does not matter here for now so add things wherever you want :)
+
+
 const assignments = [
 	{
 		"title": 		"Medieval Cat Paintings (for debugging)",
