@@ -50,22 +50,13 @@ homeText += (
 
 
 
-let homeLinks = ""// = (
-	//   `<div class="link rootLink"><a id="drawing">Drawing</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="twoDDesign">2D Design</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="threeDDesign">3D Design</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="painting">Painting</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="sculpture">Sculpture</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="introToArt">Intro to Art</a></div>` 
-	// + `<div class="link rootLink"><a class="" id="artHistory">Art History</a></div>` 
-// );
-
+let homeLinks = ""
 for (let i = 0; i < generalInfo.assignment_links.length; i++) {
 	if (generalInfo.assignment_links[i].show_link) {
 		homeLinks += (
-					`<div class="link rootLink"><a id="` + generalInfo.assignment_links[i].search_id + `">` 
+					`<a id="` + generalInfo.assignment_links[i].search_id + `"><div class="link rootLink">` 
 					+ generalInfo.assignment_links[i].link_text
-					+ `</a></div>`
+					+ `</div></a>`
 		);
 	};
 };
@@ -79,12 +70,12 @@ const introToArtBody = `<h3>Introduction to Art Assignments:</h3>`;
 const artHistoryBody = `<h3>Art History Assignments:</h3>`;
 
 const addAssignmentFooter = (
-	  `<p class="addAssignmentFooter">Want to add an assignment? Upload it ` 
+	  `<p class="addAssignmentFooter">` + generalInfo.footer_text_01 
 	+ 	`<span id="uploadLink">` 
-	+ 		`<a target="new" href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform">` 
-	+ 			`here`
+	+ 		`<a target="new" href="` + generalInfo.add_assignment_link + `">` 
+	+ 			generalInfo.footer_link
 	+ 		`</a>`
-	+ 	`</span>.`
+	+ 	`</span>` + generalInfo.footer_text_02
 	+ `</p>`
 );
 
@@ -194,13 +185,6 @@ const loadAssignments = (assignmentTag) => {
 		} else {
 			imageFile = ``;
 		};
-
-		// if (assignments[i].author != "") {
-		// 	state.assignment = assignments[i];
-		// 	infoButton = (`<span class="infoButton" onclick="updateState(` + i + `); infoModal(` + i + `);">?</span>`);
-		// } else {
-		// 	infoButton = ``;
-		// };
 		infoButton = ``;
 
 
@@ -252,7 +236,7 @@ const loadAssignments = (assignmentTag) => {
 	if (!assignmentCounter) {
 		bodyDiv.innerHTML += `<p class="row">Sorry, no assignments yet.</p>`;
 	};
-	bodyDiv.innerHTML += addAssignmentFooter;
+	if (generalInfo.show_footer_text) { bodyDiv.innerHTML += addAssignmentFooter };
 };
 
 

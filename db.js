@@ -55,8 +55,10 @@ const generalInfo = {
 	// here you can edit or turn off the footer text that links to the upload assignment form
 	// change "show_footer_text" to false to turn it off completely
 
-	"footer_text": "Want to add an assignment? Upload it", // ..."here." this part with the link is automatic for now
 	"show_footer_text": true,
+	"footer_text_01": "Want to add an assignment? Upload it ", // the space at the end is important here
+	"footer_link": "here",
+	"footer_text_02": ".",
 }
 
 
