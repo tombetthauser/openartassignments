@@ -31,9 +31,14 @@ const generalInfo = {
 		// duplicate the line below to add more paragraphs if desired, include comma at the end of the line
 
 		"Browse college art assignments. Download, revise, share, use. Free for artists & designed to help art adjuncts share knowledge and build community. Want to share your own assignments? Click the link below.",
+		"This is a beta version of OAA. Lots of improvements...",
 	],
+
+		// Link to my Google Form:
+		// https://docs.google.com/forms/d/1od6CCmDMtKYxUJL8Vgn4MBRTaT9fmJftyCjZRu_EQrA/edit
+
 	"add_assignment_text": "upload assignment",
-	"add_assignment_link": "https://docs.google.com/forms/d/e/1FAIpQLSf6ZUEM5pFoW8qKF2tjUlSoaefahyLrXfWSq8OmVfcuMMH7qA/viewform",
+	"add_assignment_link": "https://forms.gle/EVmwB8rMXd7RbmWi6",
 	"assignment_links": [
 
 		// these will appear in order
