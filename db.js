@@ -45,7 +45,7 @@ const generalInfo = {
 
 		{ "link_text": "Drawing", 		"show_link": true,		"search_id": "drawing"			},
 		{ "link_text": "2D Design", 	"show_link": true,		"search_id": "twoDDesign"		},
-		{ "link_text": "3D Design",		"show_link": false,		"search_id": "threeDDesign"		},
+		{ "link_text": "3D Design",		"show_link": true,		"search_id": "threeDDesign"		},
 		{ "link_text": "Painting", 		"show_link": true,		"search_id": "painting"			},
 		{ "link_text": "Sculpture", 	"show_link": false,		"search_id": "sculpture"		},
 		{ "link_text": "Intro to Art",	"show_link": true,		"search_id": "introToArt"		},
@@ -75,6 +75,19 @@ const generalInfo = {
 
 
 const assignments = [
+	{
+		"title": 		"3D Design Visual Glossary",
+		"subjects": 	["threeDDesign"],
+		"googleLink": 	"",
+		"file": 		"",
+		"pdf":	 		"3D Visual Glossary Project.pdf",
+		"wordFile":		"3D Visual Glossary Project.docx",
+		"thumbnail": 	"3D Design Visual Glossary Thumbnail 65.jpg",
+		"images": 		["cats.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg", "cat6.jpg"],
+		"author": 		"Bill Clinton", // leave empty quotes (like this: "") for anonymous post
+		"uploadYear":	1967,
+		"hide": 		false
+	},
 	{
 		"title": 		"Medieval Cat Paintings (for debugging)",
 		"subjects": 	["painting"],
@@ -426,19 +439,19 @@ const assignments = [
 		"uploadYear":	2019,
 		"hide": 		false
 	},
-	{
-		"title": 		"Buying Supplies",
-		"subjects": 	["twoDDesign", "painting", "drawing"],
-		"googleLink": 	"https://docs.google.com/document/d/1Wv5now2qh04aVgcnMez040YDg9CqtrQbmHeJPZbFdPU/edit?usp=sharing",
-		"file": 		"buyingsupplieshowtobeanartist",
-		"pdf":	 		"buyingsupplieshowtobeanartist.pdf",
-		"wordFile":		"buyingsupplieshowtobeanartist.docx",
-		"thumbnail": 	"buyingsuppliesthumb.jpg",
-		"images": 		["buyingsuppliespageone.jpg", "buyingsuppliespagetwo.jpg"],
-		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
-		"hide": 		false
-	},
+	// {
+	// 	"title": 		"Buying Supplies",
+	// 	"subjects": 	["twoDDesign", "painting", "drawing"],
+	// 	"googleLink": 	"https://docs.google.com/document/d/1Wv5now2qh04aVgcnMez040YDg9CqtrQbmHeJPZbFdPU/edit?usp=sharing",
+	// 	"file": 		"buyingsupplieshowtobeanartist",
+	// 	"pdf":	 		"buyingsupplieshowtobeanartist.pdf",
+	// 	"wordFile":		"buyingsupplieshowtobeanartist.docx",
+	// 	"thumbnail": 	"buyingsuppliesthumb.jpg",
+	// 	"images": 		["buyingsuppliespageone.jpg", "buyingsuppliespagetwo.jpg"],
+	// 	"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
+	// 	"uploadYear":	2019,
+	// 	"hide": 		false
+	// },
 	{
 		"title": 		"Buying Paint - How To Be An Artist",
 		"subjects": 	[],
@@ -569,32 +582,32 @@ const assignments = [
 		"uploadYear":	2019,
 		"hide": 		false
 	},
-	{
-		"title": 		"In Danger of Not Passing - Handout",
-		"subjects": 	["artHistory", "twoDDesign", "introToArt", "painting", "drawing"],
-		"googleLink": 	"https://docs.google.com/document/d/1dsA2I2NNojLgBlNmzW--QOhtp73NX4yL0ucP2fblUzk/edit?usp=sharing",
-		"file": 		"indangerofnotpassinghandout",
-		"pdf":	 		"indangerofnotpassinghandout.pdf",
-		"wordFile":		"indangerofnotpassinghandout.docx",
-		"thumbnail": 	"",
-		"images": 		[],
-		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
-		"hide": 		false
-	},
-	{
-		"title": 		"Portfolio Requirements - Drawing I",
-		"subjects": 	["drawing"],
-		"googleLink": 	"https://docs.google.com/document/d/1ek5P-HejJLGSLZsOu2sAS_F7T0xoEAoaF1KaZNAimtk/edit?usp=sharing",
-		"file": 		"portfoliorequirementsdrawingi",
-		"pdf":	 		"portfoliorequirementsdrawingi.pdf",
-		"wordFile":		"portfoliorequirementsdrawingi.docx",
-		"thumbnail": 	"",
-		"images": 		[],
-		"author": 		"", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
-		"hide": 		false
-	},
+	// {
+	// 	"title": 		"In Danger of Not Passing - Handout",
+	// 	"subjects": 	["artHistory", "twoDDesign", "introToArt", "painting", "drawing"],
+	// 	"googleLink": 	"https://docs.google.com/document/d/1dsA2I2NNojLgBlNmzW--QOhtp73NX4yL0ucP2fblUzk/edit?usp=sharing",
+	// 	"file": 		"indangerofnotpassinghandout",
+	// 	"pdf":	 		"indangerofnotpassinghandout.pdf",
+	// 	"wordFile":		"indangerofnotpassinghandout.docx",
+	// 	"thumbnail": 	"",
+	// 	"images": 		[],
+	// 	"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
+	// 	"uploadYear":	2019,
+	// 	"hide": 		false
+	// },
+	// {
+	// 	"title": 		"Portfolio Requirements - Drawing I",
+	// 	"subjects": 	["drawing"],
+	// 	"googleLink": 	"https://docs.google.com/document/d/1ek5P-HejJLGSLZsOu2sAS_F7T0xoEAoaF1KaZNAimtk/edit?usp=sharing",
+	// 	"file": 		"portfoliorequirementsdrawingi",
+	// 	"pdf":	 		"portfoliorequirementsdrawingi.pdf",
+	// 	"wordFile":		"portfoliorequirementsdrawingi.docx",
+	// 	"thumbnail": 	"",
+	// 	"images": 		[],
+	// 	"author": 		"", // leave empty quotes (like this: "") for anonymous post
+	// 	"uploadYear":	2019,
+	// 	"hide": 		false
+	// },
 	{
 		"title": 		"FINAL WRITTEN EXAM - Art Hist.",
 		"subjects": 	["artHistory"],
