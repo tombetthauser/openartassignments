@@ -31,7 +31,7 @@ const generalInfo = {
 		// duplicate the line below to add more paragraphs if desired, include comma at the end of the line
 
 		"Browse college art assignments. Download, revise, share, use. Free for artists & designed to help art adjuncts share knowledge and build community. Want to share your own assignments? Click the link below.",
-		"This is a beta version of OAA. Lots of improvements...",
+		"This is a beta version of OAA. Lots of improvements in the works...",
 	],
 
 		// Link to my Google Form:
