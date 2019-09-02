@@ -347,7 +347,7 @@ const assignments = [
 		"file": 		"2ddesigndepressingpainting",
 		"pdf":	 		"2ddesigndepressingpainting.pdf",
 		"wordFile":		"2ddesigndepressingpainting.docx",
-		"thumbnail": 	"skullptg.jpg",
+		"thumbnail": 	"skullthumbnail.jpg",
 		"images": 		["skullptg.jpg"],
 		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
 		"uploadYear":	2019,
