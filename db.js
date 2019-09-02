@@ -93,19 +93,19 @@ const assignments = [
 		"uploadYear":	1967,
 		"hide": 		false
 	},
-	{
-		"title": 		"Medieval Cat Paintings (for debugging)",
-		"subjects": 	["painting"],
-		"googleLink": 	"http://www.infinitelooper.com/?v=DLzxrzFCyOs",
-		"file": 		"",
-		"pdf":	 		"",
-		"wordFile":		"",
-		"thumbnail": 	"catsthumb.jpg",
-		"images": 		["cats.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg", "cat6.jpg"],
-		"author": 		"Bill Clinton", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	1967,
-		"hide": 		false
-	},
+	// {
+	// 	"title": 		"Medieval Cat Paintings (for debugging)",
+	// 	"subjects": 	["painting"],
+	// 	"googleLink": 	"http://www.infinitelooper.com/?v=DLzxrzFCyOs",
+	// 	"file": 		"",
+	// 	"pdf":	 		"",
+	// 	"wordFile":		"",
+	// 	"thumbnail": 	"catsthumb.jpg",
+	// 	"images": 		["cats.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg", "cat6.jpg"],
+	// 	"author": 		"Bill Clinton", // leave empty quotes (like this: "") for anonymous post
+	// 	"uploadYear":	1967,
+	// 	"hide": 		false
+	// },
 	{
 		"title": 		"2D Design: Assignment #2",
 		"subjects": 	["twoDDesign"],
@@ -341,7 +341,7 @@ const assignments = [
 		"hide": 		false
 	},
 	{
-		"title": 		"2D Design - Depressing Painting",
+		"title": 		"2D Design - Skull Painting",
 		"subjects": 	["twoDDesign", "painting", "drawing"],
 		"googleLink": 	"https://docs.google.com/document/d/1HBSGYMESo4lFVRbdz1tvkHkNTjL0cHOZJXbWPs22e6Q/edit?usp=sharing",
 		"file": 		"2ddesigndepressingpainting",
