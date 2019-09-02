@@ -561,19 +561,19 @@ const assignments = [
 		"uploadYear":	2019,
 		"hide": 		false
 	},
-	{
-		"title": 		"Critique Rubric – Drawing",
-		"subjects": 	["drawing"],
-		"googleLink": 	"https://docs.google.com/document/d/1f0eUz78lAV_-dmYr8jTNueyhGTNXSNFZkgoiCF6THiQ/edit?usp=sharing",
-		"file": 		"critiquerubricdrawing",
-		"pdf":	 		"critiquerubricdrawing.pdf",
-		"wordFile":		"critiquerubricdrawing.docx",
-		"thumbnail": 	"",
-		"images": 		[],
-		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
-		"uploadYear":	2019,
-		"hide": 		false
-	},
+	// {
+	// 	"title": 		"Critique Rubric – Drawing",
+	// 	"subjects": 	["drawing"],
+	// 	"googleLink": 	"https://docs.google.com/document/d/1f0eUz78lAV_-dmYr8jTNueyhGTNXSNFZkgoiCF6THiQ/edit?usp=sharing",
+	// 	"file": 		"critiquerubricdrawing",
+	// 	"pdf":	 		"critiquerubricdrawing.pdf",
+	// 	"wordFile":		"critiquerubricdrawing.docx",
+	// 	"thumbnail": 	"",
+	// 	"images": 		[],
+	// 	"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
+	// 	"uploadYear":	2019,
+	// 	"hide": 		false
+	// },
 	{
 		"title": 		"COMPARATIVE ANALYSIS - ArtHist",
 		"subjects": 	["artHistory", "twoDDesign", "introToArt"],
