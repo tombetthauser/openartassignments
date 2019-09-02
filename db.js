@@ -386,8 +386,8 @@ const assignments = [
 		"file": 		"2ddesignlinearperspective",
 		"pdf":	 		"2ddesignlinearperspective.pdf",
 		"wordFile":		"2ddesignlinearperspective.docx",
-		"thumbnail": 	"",
-		"images": 		[],
+		"thumbnail": 	"twopointperspectivethumbnail.jpg",
+		"images": 		["twopointperspective1.jpg"],
 		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
 		"uploadYear":	2019,
 		"hide": 		false
