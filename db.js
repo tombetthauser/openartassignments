@@ -523,14 +523,14 @@ const assignments = [
 		"hide": 		false
 	},
 	{
-		"title": 		"Homework Assignment - Silhouettes",
+		"title": 		"Positive Shape - Silhouettes",
 		"subjects": 	["twoDDesign", "painting", "drawing"],
 		"googleLink": 	"https://docs.google.com/document/d/1UUx6-tZF3Z77u5RBmRbk_FaNY40x3_f7CyCF8-EeVEU/edit?usp=sharing",
 		"file": 		"homeworkassignmentsilhouettes",
 		"pdf":	 		"homeworkassignmentsilhouettes.pdf",
 		"wordFile":		"homeworkassignmentsilhouettes.docx",
-		"thumbnail": 	"",
-		"images": 		[],
+		"thumbnail": 	"positiveshapechair.jpg",
+		"images": 		["positiveshapechair.jpg", "positiveshapeplant1.jpg", "positiveshapedog.jpg"],
 		"author": 		"Tom Betthauser", // leave empty quotes (like this: "") for anonymous post
 		"uploadYear":	2019,
 		"hide": 		false
